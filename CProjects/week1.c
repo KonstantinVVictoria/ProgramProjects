@@ -11,7 +11,6 @@ int main(void)
     long cardNumber;
     int cardNumberLength = 0;
 
-
     cardNumber = get_long("Enter Credit Card Number\n");
     cardNumberLength = get_length(cardNumber); 
     print_card_type(cardNumber, is_valid(cardNumber, cardNumberLength), cardNumberLength);
@@ -34,26 +33,21 @@ int get_length(long cardNumber)
 int isolate_digit(long cardNumber, int i)
 {
     long sigNumbers = 1;
-    int isolatedDigit;
     for (int k = 1; k <= i; k++)
     {
         sigNumbers *= 10;
     }
-    isolatedDigit = cardNumber % sigNumbers / (sigNumbers / 10);
-    return isolatedDigit;
-
+    return cardNumber % sigNumbers / (sigNumbers / 10);
 }
 
 bool is_valid(long cardNumber, int cardNumberLength)
 {
-    int totalSum;
     int oddsPlaceSum = 0, evensPlaceSum = 0, doubledDig = 0, indivDig;
 
     for (int i = 1; i <= cardNumberLength; i++)
     {
         indivDig = isolate_digit(cardNumber, i);
         doubledDig = 2 * indivDig;    
-
         for (int j = 1; j <= get_length(doubledDig); j++)
         {
             if (i % 2 == 0)
@@ -66,8 +60,7 @@ bool is_valid(long cardNumber, int cardNumberLength)
             }
         }       
     }
-    totalSum = oddsPlaceSum + evensPlaceSum;
-    return totalSum % 10 == 0;
+    return (oddsPlaceSum + evensPlaceSum) % 10 == 0;
 }
 
 void print_card_type(long cardNumber, bool isValid, int cardNumberLength)
