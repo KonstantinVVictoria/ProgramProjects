@@ -70,11 +70,6 @@ bool is_valid(long cardNumber, int cardNumberLength)
     return totalSum % 10 == 0;
 }
 
-int get_first_two_digit(long cardNumber, int cardNumberLength)
-{
-    return isolate_digit(cardNumber, cardNumberLength) * 10 + isolate_digit(cardNumber, cardNumberLength - 1);
-}
-
 void print_card_type(long cardNumber, bool isValid, int cardNumberLength)
 {
     int firstDig = isolate_digit(cardNumber, cardNumberLength);
