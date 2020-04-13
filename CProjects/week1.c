@@ -9,7 +9,7 @@ bool is_valid(long cardNumber, int cardNumberLength);
 int main(void)
 {
     long cardNumber;
-    int cardNumberLength = 0, firstDigit;
+    int cardNumberLength = 0;
 
 
     cardNumber = get_long("Enter Credit Card Number\n");
