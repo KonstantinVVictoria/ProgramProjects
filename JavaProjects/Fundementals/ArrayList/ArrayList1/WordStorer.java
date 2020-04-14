@@ -1,4 +1,3 @@
-package ArrayList;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,9 +24,9 @@ public class WordStorer
     private static void printList(ArrayList<String> stringList){
         int place = 0;
         System.out.println("List of Strings:");
-        while(place < stringList.size()){
-            System.out.println(Integer.toString(place + 1) + ") " + stringList.get(place));
+        for(String word:stringList){
             place++;
+            System.out.println(Integer.toString(place) + ") " + word);
         }
     }
 
