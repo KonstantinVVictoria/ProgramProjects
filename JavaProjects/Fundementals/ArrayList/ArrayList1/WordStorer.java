@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class WordStorer
@@ -7,6 +8,7 @@ public class WordStorer
         Scanner reader = new Scanner(System.in);
         String input;
         ArrayList<String> stringList = new ArrayList<String>();
+
         System.out.println("Please enter a strings separated by a space. Then type [0] at the end when finished");
 
         do {
@@ -17,7 +19,10 @@ public class WordStorer
 
             }
         } while (!input.equals("[0]"));
-
+        printList(stringList);
+        Collections.shuffle(stringList);
+        printList(stringList);
+        Collections.reverse(stringList);
         printList(stringList);
     }
 
