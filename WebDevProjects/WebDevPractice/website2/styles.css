@@ -1,31 +1,41 @@
 p{
-    font-size : 14px;
-    font-family : "Helvetica";
-    text-align : center;
-}
-h1{
-    font-size : 36px;
-    font-family : "Helvetica";
-    text-align : center;
-}
-h2{
-    font-size : 24px;
-    font-family : "Helvetica";
-    text-align : center;
-}
-h3{
     font-size : 18px;
     font-family : "Helvetica";
     text-align : center;
+    color : white;
+}
+h1{
+    font-size : 48px;
+    font-family : "Helvetica";
+    text-align : center;
+    color : white;
+}
+h2{
+    font-size : 36px;
+    font-family : "Helvetica";
+    text-align : center;
+    color : white;
+}
+h3{
+    font-size : 24px;
+    font-family : "Helvetica";
+    text-align : center;
+    color : white;
 }
 ol.center{
-    font-size : 14px;
+    font-size : 18px;
     font-family : "Helvetica";
     text-align : center; 
-    list-style-position: inside;      
+    list-style-position: inside;
+    color : white;     
 }
 img.center{
     border-radius: 20%;
     display: block;
-    margin: 0 auto;   
+    margin: 0 auto;
+    color : white;   
 }
+body {
+    background-color: lightblue;
+    background-image: url(images/background.jpg);
+  }
