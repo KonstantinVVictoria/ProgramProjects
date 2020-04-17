@@ -1,0 +1,31 @@
+html, body{
+    background-color:#32a2a8;
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+    font-family:"Helvetica";
+    font-size:16px;
+    text-align:center;
+    color:white;
+}
+#name_title{
+    font-size:3rem;
+}
+#nav_links > a{
+    text-decoration:none;
+    padding:10px;
+    color:white;
+    font-size:1.2rem;
+}
+#profile_pic img
+{
+    border-radius:20%;
+}
+#bio>h2{
+    font-size:3rem;
+}
+#experiences{
+    list-style-type:circle;
+}
+#experience>details>summary{
+    font-size:3rem;
+}
