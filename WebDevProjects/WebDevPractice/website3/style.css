@@ -14,18 +14,27 @@ html, body{
     text-decoration:none;
     padding:10px;
     color:white;
-    font-size:1.2rem;
+    font-size:2rem;
 }
 #profile_pic img
 {
     border-radius:20%;
+    border-width: 10px;
+    border-style:solid;
 }
 #bio>h2{
     font-size:3rem;
 }
 #experiences{
     list-style-type:circle;
+    list-style-position:inside;
 }
 #experience>details>summary{
     font-size:3rem;
 }
+table, th, td{
+    border: 5px solid white;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding:5px;
+  }
