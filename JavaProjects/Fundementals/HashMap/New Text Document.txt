@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class WordStorer2
+{
+
+	public static void main(String[] args)
+	{
+		Scanner reader = new Scanner(System.in);
+		String input;
+		ArrayList<int> intList = new ArrayList<int>;
+		
+		do
+		{
+			System.out.println("Enter a positive integer. Enter -1 to finish");
+			intList.add(reader.nextInt());		
+		}
+		while (!(reader.nextInt() == - 1));
+		Collections.shuffle(intList);
+		for(int number:intList)
+		{
+			System.out.println(number);
+		}
+	}
+
+}
