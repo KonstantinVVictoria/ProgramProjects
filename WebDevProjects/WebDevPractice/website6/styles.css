@@ -1,0 +1,54 @@
+html, body{
+    height:100%;
+}
+.nav-link{
+    color:gainsboro !Important;
+}
+.featuretitle
+{
+    background-color: black;
+    opacity: 20%;
+    height: 10px;
+}
+.container h1, p{
+    color:white;
+}
+.card-text{
+    color:black;
+}
+@media only screen and (min-width: 600px) {
+
+.carousel {
+    width:90%;
+    height:30%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin:0 auto;
+  }
+  .carousel-item img {
+    margin: 0 auto;
+    max-height:500px;
+}
+  #jumbotron1shadow
+  {
+    padding-top:30px !Important;
+    padding-bottom:30px !Important;
+    margin-bottom:0 !Important; 
+  }
+  #featurepara{
+        padding-left: 300px;
+        padding-right: 300px;
+  }
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    #jumbotron {
+        padding-bottom: 0 !Important;
+    }
+    .carousel-item img {
+        margin: 0 auto;
+        max-height:500px;
+    }
+  }
