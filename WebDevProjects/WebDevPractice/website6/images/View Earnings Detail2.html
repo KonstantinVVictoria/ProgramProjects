@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<LINK REL="stylesheet" HREF="/css/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<title>View Earnings Detail</title>
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</head>
+<body>
+<div class="headerwrapperdiv">
+<div class="pageheaderdiv1">
+<a href="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</a>
+<h1>WebSMART PROD</h1></DIV><div class="headerlinksdiv">
+<SPAN class="pageheaderlinks2">
+<map name="Module_Navigation_Links_H" title="Module Navigation Links">
+<p>
+<a href="#skip_Module_Navigation_Links_H" onMouseover="window.status='Skip Module Navigation Links'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Skip Module Navigation Links'; return true" onBlur="window.status=''; return true"  class="skiplinks">Skip Module Navigation Links</a>
+<table  CLASS="plaintable" SUMMARY="This is main table for displaying Tab Items."
+                          WIDTH="100%" cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<TD CLASS="pldefault">
+<table  CLASS="plaintable" SUMMARY="This table displays Tab Items."
+                 cellSpacing=0 cellPadding=0 border=0>
+<tr>
+<td class="taboff" height=22>
+<a href="/prod/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu">Home</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/prod/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu" onMouseover="window.status='Student Services & Financial Aid'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Student Services & Financial Aid'; return true" onBlur="window.status=''; return true" >Student</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/prod/twbkwbis.P_GenMenu?name=bmenu.P_FAFormsMnu" onMouseover="window.status='Financial Aid'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Financial Aid'; return true" onBlur="window.status=''; return true" >Financial Aid</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="tabon"  height=22>
+<a href="/prod/twbkwbis.P_GenMenu?name=pmenu.P_MainMnu" onMouseover="window.status='Employee'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Employee'; return true" onBlur="window.status=''; return true" >Employee</a>
+</TD>
+<TD class="bgtabon"  height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/prod/twbkwbis.P_GenMenu?name=bmenu.P_FinanceMnu" onMouseover="window.status='Finance'; return true" onMouseout="window.status=''; return true" onFocus="window.status='Finance'; return true" onBlur="window.status=''; return true" >Finance</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+<td class="taboff" height=22>
+<a href="/prod/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu" onMouseover="window.status='New Personal Information'; return true" onMouseout="window.status=''; return true" onFocus="window.status='New Personal Information'; return true" onBlur="window.status=''; return true" >My Profile</a>
+</TD>
+<TD class="bgtaboff" height=22 vAlign="top" align="right">
+<img src="/wtlgifs/web_tab_corner_right.gif" alt="Tab Corner Right" CLASS="headerImg" TITLE="Tab Corner Right"  NAME="web_tab_corner_right" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=20 WIDTH=8 />
+</TD>
+</tr>
+</table>
+</TD>
+</tr>
+<tr>
+<TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+</map>
+</SPAN>
+<a name="skip_Module_Navigation_Links_H"></a>
+</DIV>
+<table  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<div class="headerlinksdiv2">
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext" /p>
+<SPAN class="pageheaderlinks">
+<a href="/prod/twbkwbis.P_GenMenu?name=pmenu.P_PayMenu"  class="submenulinktext2" id="ssbbackurl">RETURN TO MENU</a>
+|
+<a href="/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3" accesskey="2" class="submenulinktext2">SITE MAP</a>
+|
+<a href="/prod/twbkfrmt.P_DispHelp?pagename_in=bwpkhpay.P_ViewEarningsDetail" accesskey="H" onClick="popup = window.open('/prod/twbkfrmt.P_DispHelp?pagename_in=bwpkhpay.P_ViewEarningsDetail', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</a>
+|
+<a href="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</a>
+</span>
+</TD>
+</tr>
+</table>
+</DIV>
+<div class="pagetitlediv">
+<table  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<tr>
+<TD CLASS="pldefault">
+<h2>View Earnings Detail</h2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext" /p>
+<div class="staticheaders">
+</div>
+</TD>
+</tr>
+<tr>
+<TD class="bg3" width="100%" colSpan=3><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD>
+</tr>
+</table>
+<a name="main_content"></a>
+</DIV>
+<div class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+
+<div class="infotextdiv"><table  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><tr><td CLASS="indefault"><img src="/wtlgifs/twgginfo.gif" alt="Information" CLASS="headerImg" TITLE="Information"  NAME="Info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=24 WIDTH=27 /></td><td CLASS="indefault"><SPAN class="infotext"> To view a different time period, enter a new date range at the bottom of the page and click Display.<p></SPAN></td></tr></table><p></DIV>
+<form action="bwpkhpay.P_ViewEarningsDetail" method="post">
+<table  CLASS="plaintable" SUMMARY="This layout table is used for copying earn code values.">
+<tr>
+<TD CLASS="pldefault">
+<input type="hidden" name="earn" value="STB" />
+</TD>
+</tr>
+</table>
+<table  CLASS="datadisplaytable" SUMMARY="This table display earnings information by year, month, gross pay and hours. "><caption class="captiontext">Student Assistant Bridge</caption>
+<tr>
+<th CLASS="ddlabel" scope="row" >Year</th>
+<th CLASS="ddlabel" scope="row" >Month</th>
+<th CLASS="ddlabel" scope="row" >Gross Pay</th>
+<th CLASS="ddlabel" scope="row" >Hours</th>
+</tr>
+<tr>
+<td CLASS="dddefault">2019</td>
+<td CLASS="dddefault">January  </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">February </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">March    </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">April    </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">May      </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">June     </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">July     </td>
+<td CLASS="dddefault"><p class="rightaligntext">         996.00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">          66.40</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">August   </td>
+<td CLASS="dddefault"><p class="rightaligntext">       1,128.00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">          75.20</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">September</td>
+<td CLASS="dddefault"><p class="rightaligntext">         351.00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">          23.40</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">October  </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">November </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddead">&nbsp;</td>
+<td CLASS="dddefault">December </td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">  .00</p></td>
+</tr>
+<tr>
+<td CLASS="dddefault">2020</td>
+<td colspan="3" CLASS="dddefault"> All months to display are zero. </td>
+<tr>
+<th colspan="2" CLASS="ddlabel" scope="row" > TOTAL </th>
+<td CLASS="dddefault"><p class="rightaligntext">       2,475.00</p></td>
+<td CLASS="dddefault"><p class="rightaligntext">         165.00</p></td>
+</tr>
+</table>
+<p>
+<table  CLASS="dataentrytable" SUMMARY="This user determine the date range for earnings records. ">
+<tr>
+<td CLASS="delabel" scope="row" ><LABEL for=fdate_input_id><SPAN class="fieldlabeltext">From Date:</SPAN></LABEL></td>
+<TD CLASS="dedefault">
+<select name="f_mnth" size="1">
+<OPTION VALUE="01" SELECTED>January  </OPTION>
+<OPTION VALUE="02">February </OPTION>
+<OPTION VALUE="03">March    </OPTION>
+<OPTION VALUE="04">April    </OPTION>
+<OPTION VALUE="05">May      </OPTION>
+<OPTION VALUE="06">June     </OPTION>
+<OPTION VALUE="07">July     </OPTION>
+<OPTION VALUE="08">August   </OPTION>
+<OPTION VALUE="09">September</OPTION>
+<OPTION VALUE="10">October  </OPTION>
+<OPTION VALUE="11">November </OPTION>
+<OPTION VALUE="12">December </OPTION>
+</select>
+</TD>
+<TD CLASS="dedefault">
+<select name="f_year" ID="fdate_input_id">
+<OPTION VALUE="2020">2020</OPTION>
+<OPTION VALUE="2019" SELECTED>2019</OPTION>
+</select>
+</TD>
+</tr>
+<tr>
+<td CLASS="delabel" scope="row" ><LABEL for=tdate_input_id><SPAN class="fieldlabeltext">To Date:</SPAN></LABEL></td>
+<TD CLASS="dedefault">
+<select name="t_mnth" size="1">
+<OPTION VALUE="01">January  </OPTION>
+<OPTION VALUE="02">February </OPTION>
+<OPTION VALUE="03">March    </OPTION>
+<OPTION VALUE="04">April    </OPTION>
+<OPTION VALUE="05" SELECTED>May      </OPTION>
+<OPTION VALUE="06">June     </OPTION>
+<OPTION VALUE="07">July     </OPTION>
+<OPTION VALUE="08">August   </OPTION>
+<OPTION VALUE="09">September</OPTION>
+<OPTION VALUE="10">October  </OPTION>
+<OPTION VALUE="11">November </OPTION>
+<OPTION VALUE="12">December </OPTION>
+</select>
+</TD>
+<TD CLASS="dedefault">
+<select name="t_year" ID="tdate_input_id">
+<OPTION VALUE="2020" SELECTED>2020</OPTION>
+<OPTION VALUE="2019">2019</OPTION>
+</select>
+</TD>
+</tr>
+</table>
+<p>
+<table  CLASS="plaintable" SUMMARY="This layout table is used for displaying buttons.">
+<tr>
+<TD CLASS="pldefault">
+<input type="hidden" name="f_mnth" value="01" />
+<input type="hidden" name="t_mnth" value="05" />
+<input type="hidden" name="t_year" value="2020" />
+<input type="hidden" name="f_year" value="2019" />
+<input type="submit" value="Display" />
+</TD>
+</tr>
+</table>
+</form>
+<table  CLASS="plaintable" SUMMARY="This table is used to align links." WIDTH="100%">
+<tr>
+<td CLASS="pldefault"><p class="centeraligntext"><SPAN class="pagefooterlinks"><a href="/prod/bwpkhpay.P_ViewEarnSummary?f_mnth=01&amp;f_year=2019&amp;t_mnth=05&amp;t_year=2020" class="whitespacelink"onfocus="window.status='Earnings History'; return true" onBlur="window.status=''; return true" onmouseover="window.status='Return to Earnings History'; return true" onMouseout="window.status=''; return true" >Earnings History</a></SPAN></p></td>
+</tr>
+</table>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<table  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><tr><TD class="bgtabon" width="100%" colSpan=2><img src="/wtlgifs/web_transparent.gif" alt="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10 /></TD></tr></table>
+<a href="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</a>
+</DIV>
+<div class="footerbeforediv">
+
+</DIV>
+<div class="footerafterdiv">
+
+</DIV>
+<div class="globalafterdiv">
+
+</DIV>
+<div class="globalfooterdiv">
+
+</DIV>
+<div class="pagefooterdiv">
+<SPAN class="releasetext">Release: 8.16</SPAN>
+</DIV>
+<div class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2020 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</body>
+</html>

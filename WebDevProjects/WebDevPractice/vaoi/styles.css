@@ -1,0 +1,54 @@
+/* mobile */
+@media only screen and (max-width: 600px)
+{
+    html, body
+    {
+        height:100%;
+        background-image:linear-gradient(to bottom, #8cff73, #73b9ff);
+    }
+    #login-container
+    {
+        height:45%;
+        width:90%;
+        background-color: transparent;
+        border-width: 0 50px;
+        border: 2px solid white;
+        border-radius: 5%;
+        margin: 0 auto;
+
+    }
+
+    #login-form label 
+    {
+        margin-top: 20px;
+        color:white;
+        font-size: 24px;
+        font-weight: 200;   
+    }
+
+    #login-form input 
+    {
+        display: inline-block;
+        width: 85%;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 5%;
+    }
+
+    #login-button
+    {
+        height: 15%;
+        width: 35%;
+        margin: 0 auto;
+
+    }
+
+    #login-button a
+    {
+        font-size: 48px;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+    }
+
+}

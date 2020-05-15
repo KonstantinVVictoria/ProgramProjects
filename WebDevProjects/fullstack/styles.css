@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+header {
+    display: inline-block;
+    position: fixed;
+    height:5%;
+    width: 100%;
+    text-align: center;
+    font-size: 3vh;
+    color: darkgray;    
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    margin:0 auto;
+}
+#output-container {
+    display: flex;
+    height:50%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+#output-container p{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 8vh;
+    color: darkgray;
+}
+#results {
+    height:15%;
+    width:100%;
+    font-size: 4vw;
+}
+
+#input {
+    text-align: center;
+}
